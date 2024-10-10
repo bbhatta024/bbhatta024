@@ -45,7 +45,7 @@ echo "name,mcrA_match,hsp_match" > ../Babita_informatics.csv
  
  done
 
-# Step 7: Sort the output CSV file to determine the ideal candidates
+# Step 7: Sort the output CSV file to determine the ideal candidates (proteomes)
 sort -t, -k2,2nr -k3,3nr ../Babita_informatics.csv | sed '1!b' > ../sorted_candidates.csv
 
 
